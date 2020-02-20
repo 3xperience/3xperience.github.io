@@ -1,14 +1,19 @@
 body {
 	background-color: #424242;
 }
-.Page_Title {
-	text-align: center;
-	size: 96px;
+/*Main Content*/
+.mainContent {
+	padding-left: 15%;
+	padding-right: 5%; 
 }
-
+.mainContent .pageTitle {
+	text-align: center;
+	font-size: 48px;
+}
+/*Side Navigation Panel*/
 .sidepanel {
 	height: 100%;
-	width: 160px;
+	width: 10%;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -20,16 +25,20 @@ body {
 .sidepanel a {
 	text-decoration: none;
 	color: grey;
+	font-size: 130%;
+}
+.sidepanel a:hover {
+	color: #2E2E2E;
+}
+.sidepanel h1 {
+	color: white;
+	font-size: 180%
 }
 
-.sidepanel a:hover {
-	color: #f1f1f1;
+p {
+	text-indent: 3%;
 }
 
 br {
 	padding-bottom: 2%;
-}
-
-.mainContent {
-	padding-left: 160px;
 }
