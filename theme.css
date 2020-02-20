@@ -1,5 +1,5 @@
 body {
-	background-color: darkgrey;
+	background-color: #2E2E2E;
 }
 .Page_Title {
 	text-align: center;
@@ -16,6 +16,10 @@ body {
 	background-color: #111;
 	overflow-x: hidden;
 	padding: 20px;
+}
+.sidepanel a {
+	text-decoration: none;
+	color: grey;
 }
 
 .sidepanel a:hover {
