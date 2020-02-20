@@ -1,5 +1,6 @@
 body {
-	background-color: #d1d1d1;
+	background-color: #f1f1f1;
+	font-family: Arial;
 }
 /*Main Content*/
 .mainContent {
@@ -9,6 +10,13 @@ body {
 .mainContent .pageTitle {
 	text-align: center;
 	font-size: 48px;
+}
+.mainContent .body {
+	text-indent: 3%;
+	text-size: 14px;
+}
+.mainContent .subTitle {
+	text-size: 16px;
 }
 /*Side Navigation Panel*/
 .sidepanel {
@@ -25,7 +33,7 @@ body {
 .sidepanel a {
 	text-decoration: none;
 	color: grey;
-	font-size: 130%;
+	font-size: 100%;
 }
 .sidepanel a:hover {
 	color: #2E2E2E;
@@ -33,10 +41,6 @@ body {
 .sidepanel h1 {
 	color: white;
 	font-size: 180%
-}
-
-p {
-	text-indent: 3%;
 }
 
 br {
