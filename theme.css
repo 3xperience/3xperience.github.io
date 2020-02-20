@@ -25,3 +25,7 @@ body {
 .sidepanel a:hover {
 	color: #f1f1f1;
 }
+
+br {
+	padding-bottom: 2%;
+}
