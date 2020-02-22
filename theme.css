@@ -4,8 +4,8 @@ body {
 }
 /*Main Content*/
 .mainContent {
-	padding-left: 30%;
-	padding-right: 20%; 
+	padding-left: 25%;
+	padding-right: 10%; 
 }
 .mainContent .pageTitle {
 	text-align: center;
@@ -13,10 +13,10 @@ body {
 }
 .mainContent .body {
 	text-indent: 3%;
-	text-size: 14px;
+	text-size: 18px;
 }
 .mainContent .subTitle {
-	text-size: 24px;
+	text-size: 12px;
 }
 .mainContent img {
 	display: block;
