@@ -15,14 +15,18 @@
 			</summary>
 		</details>
 		<details>
-			<summary>C3X Lessons</summary>
-			<a href="./writeup.html">Malware Analysis</a>
+			<summary>Resources</summary>
+			<a href="./writeup.html">C3X 2019 - Binary Analysis Guide</a>
 		</details>
 	</div>
 	<!-- Main Content -->
 	<div class="mainContent">
 		<h1 class="pageTitle">Basic .NET Malware Analysis</h1>
-		<h2 class="subTitle">Sections</h2>
+		<h2 class="subTitle">Preparation</h2>
+		<p class="body">
+			Before I get into this I want to give a massive shoutout to <a href="">Anthony Woodburn</a>. He was our team lead and put in an insane amount of work to make sure we got everything we could out of the competition and the months of preparations.<br>
+			We started prep for C3X two months before the competition. This gave us all the time necessary to not only learn new concepts but also prepare for the competition with a test environment 
+		</p>
 		<p class="body">Before the competition we had made a script that covered the file enumeration process, that script is included in this repository. The first thing it did was check if the executable was packed, it would then to unpack it and continue analysis. The script only detects and unpacks UPX packed programs, as the competition was beginner friendly we assumed that the most obfuscated the program would be is packed with a well known packer like UPX. The program did not end up being packed.</p>
 		<p class="body">Once that was done we ran <i>strings</i> against it, and wrote the ouput into a seperate file called 'strings_malchallenge.txt'. We then used some regular expression queries to go through all the strings and find ones that were thought could be important, namely files, file paths, URLs, and ip addresses, then stored those into a file called 'interest_malchallenge.txt'. This allowed us to find the flag for Flag 7, which was <code>C:\Users\user1\source\repos\malchallenge\malchallenge\obj\Release\malchallenge.pdb</code>. These strings allowed us to guess many of the flags (4 and 8), however; I want to explain the ways I found them afterwards that would be much more reliable than guessing.
 		</p>

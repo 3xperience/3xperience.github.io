@@ -4,8 +4,8 @@ body {
 }
 /*Main Content*/
 .mainContent {
-	padding-left: 18%;
-	padding-right: 5%; 
+	padding-left: 30%;
+	padding-right: 20%; 
 }
 .mainContent .pageTitle {
 	text-align: center;
@@ -54,6 +54,9 @@ body {
 .sidepanel details {
 	font-size: 100%;
 	font-size: 90%;
+}
+.sidepanel .link {
+	padding-left: 5%;
 }
 
 br {
