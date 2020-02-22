@@ -21,11 +21,11 @@
 	</div>
 	<!-- Main Content -->
 	<div class="mainContent">
-		<h1 class="pageTitle">Basic .NET Malware Analysis</h1>
+		<h1 class="pageTitle">C3X 2019 - Binary Analysis Guide</h1>
 		<h2 class="subTitle">Preparation</h2>
 		<p class="body">
-			Before I get into this I want to give a massive shoutout to <a href="">Anthony Woodburn</a>. He was our team lead and put in an insane amount of work to make sure we got everything we could out of the competition and the months of preparations.<br>
-			We started prep for C3X two months before the competition. This gave us all the time necessary to not only learn new concepts but also prepare for the competition with a test environment 
+			Before I get into this I want to give a massive shoutout to <a href="https://www.linkedin.com/in/atwoodburn/">Anthony Woodburn</a>. He was my threat hunting team lead and put in an insane amount of work to make sure we got everything we could out of the competition and the months of preparations. If you want to read about how he prepared our team and the structure of Fanshawe's team, I highly suggest you read his break down of that <a href="https://baudlicious.github.io/C3X/">here</a><br>
+			I started prep for C3X two months before the competition along with the rest of our team. This gave us enough time to learn the skills and concepts that we needed to and to organize ourselves into teams.
 		</p>
 		<p class="body">Before the competition we had made a script that covered the file enumeration process, that script is included in this repository. The first thing it did was check if the executable was packed, it would then to unpack it and continue analysis. The script only detects and unpacks UPX packed programs, as the competition was beginner friendly we assumed that the most obfuscated the program would be is packed with a well known packer like UPX. The program did not end up being packed.</p>
 		<p class="body">Once that was done we ran <i>strings</i> against it, and wrote the ouput into a seperate file called 'strings_malchallenge.txt'. We then used some regular expression queries to go through all the strings and find ones that were thought could be important, namely files, file paths, URLs, and ip addresses, then stored those into a file called 'interest_malchallenge.txt'. This allowed us to find the flag for Flag 7, which was <code>C:\Users\user1\source\repos\malchallenge\malchallenge\obj\Release\malchallenge.pdb</code>. These strings allowed us to guess many of the flags (4 and 8), however; I want to explain the ways I found them afterwards that would be much more reliable than guessing.
