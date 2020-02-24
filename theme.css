@@ -31,7 +31,7 @@ body {
 /*Side Navigation Panel*/
 .sidepanel {
 	height: 100%;
-	width: 20em;
+	width: 15em;
 	position: fixed;
 	z-index: 1;
 	top: 0;
