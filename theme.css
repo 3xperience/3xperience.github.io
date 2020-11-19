@@ -2,25 +2,33 @@ body {
 	background-color: #f1f1f1;
 	font-family: Arial;
 }
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 20px;
+}
 /*Main Content*/
 .mainContent {
-	padding-left: 25%;
-	padding-right: 10%;
-	max-width: 64em;
+	max-width: 80em;
 	margin-left: auto;
 	margin-right: auto
 }
 .mainContent .pageTitle {
 	text-align: center;
-	font-size: 48px;
 }
 .mainContent .body {
-	text-indent: 15px;
-	text-size: 18px;
+	text-indent: 2em;
+	font-size: 14px;
 }
-.mainContent .subTitle {
-	text-size: 12px;
+.mainContent .list {
+	font-size: 14px;
 }
+
+
 .mainContent img {
 	display: block;
 	margin-left: auto;
@@ -31,7 +39,7 @@ body {
 /*Side Navigation Panel*/
 .sidepanel {
 	height: 100%;
-	width: 15em;
+	width: 20em;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -43,8 +51,8 @@ body {
 }
 .sidepanel a {
 	text-decoration: none;
-	font-size: 90%;
-	color: white;
+	font-size: 12px;
+	color: grey;
 	text-indent: 2%;
 }
 .sidepanel a:hover {
@@ -57,6 +65,9 @@ body {
 .sidepanel details {
 	font-size: 100%;
 	font-size: 90%;
+}
+.sidepanel .list {
+	text-indent: 1em;
 }
 .sidepanel .link {
 	padding-left: 5%;
